@@ -24,7 +24,7 @@ namespace phonebook.Models
             using (MySqlConnection conn = GetConnection())
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("select * from Album where id < 10", conn);
+                MySqlCommand cmd = new MySqlCommand("select * from ds19_phonenumbers", conn);
 
                 using (var reader = cmd.ExecuteReader())
                 {

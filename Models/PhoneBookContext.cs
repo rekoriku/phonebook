@@ -15,8 +15,7 @@ namespace phonebook.Models
             this.ConnectionString = connectionString;
         }
 
-        private MySqlConnection GetConnection()
-        {
-            return new MySqlConnection(ConnectionString);
-        }
+        private MySqlConnection GetConnection() => new MySqlConnection(ConnectionString);
+
+    }
 }
